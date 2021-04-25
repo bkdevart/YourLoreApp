@@ -7,27 +7,26 @@
 
 import SwiftUI
 
-struct Result: Codable {
-    var id: Int
-    var title: String
-    var story: String
-}
-
 struct ContentView: View {
-    @State var results = [Result]()
+    @State var results = [Lore]()
     
     var body: some View {
-        Form {
-            List(results, id: \.id) { item in
-                VStack(alignment: .leading) {
-                    Text(item.title)
-                        .font(.headline)
-                    Text(item.story)
-                        .font(.body)
+        NavigationView {
+            Form {
+                List(results, id: \.id) { lore in
+                    NavigationLink(destination: LoreView(lore: lore)) {
+                        VStack(alignment: .leading) {
+                            Text(lore.title)
+                                .font(.headline)
+                            Text(lore.story)
+                                .font(.body)
+                        }
+                    }
                 }
+                .navigationBarTitle("Your Lore")
             }
+            .onAppear(perform: loadData)
         }
-        .onAppear(perform: loadData)
     }
     
     func loadData() {
@@ -44,7 +43,7 @@ struct ContentView: View {
         URLSession.shared.dataTask(with: request) { data, response, error in
             // handle the result of the networking task
             if let data = data {
-                if let decodedResponse = try?JSONDecoder().decode([Result].self, from: data) {
+                if let decodedResponse = try?JSONDecoder().decode([Lore].self, from: data) {
                     DispatchQueue.main.async {
                         self.results = decodedResponse
                     }

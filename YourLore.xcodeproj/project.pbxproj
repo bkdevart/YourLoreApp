@@ -11,6 +11,8 @@
 		CABAE1AD2634EED50017EFCA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABAE1AC2634EED50017EFCA /* ContentView.swift */; };
 		CABAE1AF2634EED60017EFCA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CABAE1AE2634EED60017EFCA /* Assets.xcassets */; };
 		CABAE1B22634EED60017EFCA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CABAE1B12634EED60017EFCA /* Preview Assets.xcassets */; };
+		CABAE1BB2634F7640017EFCA /* LoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABAE1BA2634F7640017EFCA /* LoreView.swift */; };
+		CABAE1BE2634F8DE0017EFCA /* Lore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABAE1BD2634F8DE0017EFCA /* Lore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		CABAE1AE2634EED60017EFCA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CABAE1B12634EED60017EFCA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CABAE1B32634EED60017EFCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CABAE1BA2634F7640017EFCA /* LoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoreView.swift; sourceTree = "<group>"; };
+		CABAE1BD2634F8DE0017EFCA /* Lore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,8 @@
 			children = (
 				CABAE1AA2634EED50017EFCA /* YourLoreApp.swift */,
 				CABAE1AC2634EED50017EFCA /* ContentView.swift */,
+				CABAE1BD2634F8DE0017EFCA /* Lore.swift */,
+				CABAE1BA2634F7640017EFCA /* LoreView.swift */,
 				CABAE1AE2634EED60017EFCA /* Assets.xcassets */,
 				CABAE1B32634EED60017EFCA /* Info.plist */,
 				CABAE1B02634EED60017EFCA /* Preview Content */,
@@ -139,7 +145,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				CABAE1AD2634EED50017EFCA /* ContentView.swift in Sources */,
+				CABAE1BB2634F7640017EFCA /* LoreView.swift in Sources */,
 				CABAE1AB2634EED50017EFCA /* YourLoreApp.swift in Sources */,
+				CABAE1BE2634F8DE0017EFCA /* Lore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
