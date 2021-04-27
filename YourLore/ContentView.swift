@@ -18,8 +18,8 @@ struct ContentView: View {
                         VStack(alignment: .leading) {
                             Text(lore.title)
                                 .font(.headline)
-                            Text(lore.story)
-                                .font(.body)
+//                            Text(lore.story)
+//                                .font(.body)
                         }
                     }
                 }
