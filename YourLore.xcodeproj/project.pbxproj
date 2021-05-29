@@ -13,6 +13,7 @@
 		CABAE1B22634EED60017EFCA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CABAE1B12634EED60017EFCA /* Preview Assets.xcassets */; };
 		CABAE1BB2634F7640017EFCA /* LoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABAE1BA2634F7640017EFCA /* LoreView.swift */; };
 		CABAE1BE2634F8DE0017EFCA /* Lore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABAE1BD2634F8DE0017EFCA /* Lore.swift */; };
+		CADE17DD2662FF070063B83A /* YourLore.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CADE17DB2662FF070063B83A /* YourLore.xcdatamodeld */; };
 		CAE940682661EDA300F3EF72 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE940662661EDA300F3EF72 /* MapView.swift */; };
 		CAE940692661EDA300F3EF72 /* NavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE940672661EDA300F3EF72 /* NavView.swift */; };
 		CAE9406B2661EECA00F3EF72 /* MKPointAnnotation-Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE9406A2661EECA00F3EF72 /* MKPointAnnotation-Codable.swift */; };
@@ -27,6 +28,7 @@
 		CABAE1B32634EED60017EFCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CABAE1BA2634F7640017EFCA /* LoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoreView.swift; sourceTree = "<group>"; };
 		CABAE1BD2634F8DE0017EFCA /* Lore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lore.swift; sourceTree = "<group>"; };
+		CADE17DC2662FF070063B83A /* YourLore.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = YourLore.xcdatamodel; sourceTree = "<group>"; };
 		CAE940662661EDA300F3EF72 /* MapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		CAE940672661EDA300F3EF72 /* NavView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavView.swift; sourceTree = "<group>"; };
 		CAE9406A2661EECA00F3EF72 /* MKPointAnnotation-Codable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MKPointAnnotation-Codable.swift"; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 				CABAE1AE2634EED60017EFCA /* Assets.xcassets */,
 				CABAE1B32634EED60017EFCA /* Info.plist */,
 				CABAE1B02634EED60017EFCA /* Preview Content */,
+				CADE17DB2662FF070063B83A /* YourLore.xcdatamodeld */,
 			);
 			path = YourLore;
 			sourceTree = "<group>";
@@ -159,6 +162,7 @@
 				CAE940682661EDA300F3EF72 /* MapView.swift in Sources */,
 				CABAE1AB2634EED50017EFCA /* YourLoreApp.swift in Sources */,
 				CABAE1BE2634F8DE0017EFCA /* Lore.swift in Sources */,
+				CADE17DD2662FF070063B83A /* YourLore.xcdatamodeld in Sources */,
 				CAE940692661EDA300F3EF72 /* NavView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -348,6 +352,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CADE17DB2662FF070063B83A /* YourLore.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CADE17DC2662FF070063B83A /* YourLore.xcdatamodel */,
+			);
+			currentVersion = CADE17DC2662FF070063B83A /* YourLore.xcdatamodel */;
+			path = YourLore.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = CABAE19F2634EED50017EFCA /* Project object */;
 }
