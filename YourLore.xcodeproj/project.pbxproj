@@ -13,6 +13,9 @@
 		CABAE1B22634EED60017EFCA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CABAE1B12634EED60017EFCA /* Preview Assets.xcassets */; };
 		CABAE1BB2634F7640017EFCA /* LoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABAE1BA2634F7640017EFCA /* LoreView.swift */; };
 		CABAE1BE2634F8DE0017EFCA /* Lore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABAE1BD2634F8DE0017EFCA /* Lore.swift */; };
+		CAE940682661EDA300F3EF72 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE940662661EDA300F3EF72 /* MapView.swift */; };
+		CAE940692661EDA300F3EF72 /* UnlockedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE940672661EDA300F3EF72 /* UnlockedView.swift */; };
+		CAE9406B2661EECA00F3EF72 /* MKPointAnnotation-Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE9406A2661EECA00F3EF72 /* MKPointAnnotation-Codable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		CABAE1B32634EED60017EFCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CABAE1BA2634F7640017EFCA /* LoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoreView.swift; sourceTree = "<group>"; };
 		CABAE1BD2634F8DE0017EFCA /* Lore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lore.swift; sourceTree = "<group>"; };
+		CAE940662661EDA300F3EF72 /* MapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		CAE940672661EDA300F3EF72 /* UnlockedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnlockedView.swift; sourceTree = "<group>"; };
+		CAE9406A2661EECA00F3EF72 /* MKPointAnnotation-Codable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MKPointAnnotation-Codable.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +66,9 @@
 				CABAE1AC2634EED50017EFCA /* ContentView.swift */,
 				CABAE1BD2634F8DE0017EFCA /* Lore.swift */,
 				CABAE1BA2634F7640017EFCA /* LoreView.swift */,
+				CAE940662661EDA300F3EF72 /* MapView.swift */,
+				CAE940672661EDA300F3EF72 /* UnlockedView.swift */,
+				CAE9406A2661EECA00F3EF72 /* MKPointAnnotation-Codable.swift */,
 				CABAE1AE2634EED60017EFCA /* Assets.xcassets */,
 				CABAE1B32634EED60017EFCA /* Info.plist */,
 				CABAE1B02634EED60017EFCA /* Preview Content */,
@@ -144,10 +153,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAE9406B2661EECA00F3EF72 /* MKPointAnnotation-Codable.swift in Sources */,
 				CABAE1AD2634EED50017EFCA /* ContentView.swift in Sources */,
 				CABAE1BB2634F7640017EFCA /* LoreView.swift in Sources */,
+				CAE940682661EDA300F3EF72 /* MapView.swift in Sources */,
 				CABAE1AB2634EED50017EFCA /* YourLoreApp.swift in Sources */,
 				CABAE1BE2634F8DE0017EFCA /* Lore.swift in Sources */,
+				CAE940692661EDA300F3EF72 /* UnlockedView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

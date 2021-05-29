@@ -5,10 +5,15 @@
 //  Created by Brandon Knox on 4/24/21.
 //
 
+import MapKit
 import SwiftUI
 
 struct ContentView: View {
     @State var results = [Lore]()
+    @State private var centerCoordinate = CLLocationCoordinate2D()
+    @State private var selectedPlace: MKPointAnnotation?
+    @State private var showingPlaceDetails = false
+    @State private var annotations = [CodableMKPointAnnotation]()
     
     var body: some View {
         NavigationView {
@@ -24,6 +29,7 @@ struct ContentView: View {
                     }
                 }
                 .navigationBarTitle("Your Lore")
+                NavigationLink("Map", destination: MapView(centerCoordinate: $centerCoordinate, selectedPlace: $selectedPlace, showingPlaceDetails: $showingPlaceDetails, annotations: annotations))
             }
             .onAppear(perform: loadData)
         }
