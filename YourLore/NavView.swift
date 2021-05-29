@@ -8,7 +8,7 @@
 import MapKit
 import SwiftUI
 
-struct UnlockedView: View {
+struct NavView: View {
     @Binding var centerCoordinate: CLLocationCoordinate2D
     @Binding var locations: [CodableMKPointAnnotation]
     @Binding var selectedPlace: MKPointAnnotation?

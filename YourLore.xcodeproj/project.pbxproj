@@ -14,7 +14,7 @@
 		CABAE1BB2634F7640017EFCA /* LoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABAE1BA2634F7640017EFCA /* LoreView.swift */; };
 		CABAE1BE2634F8DE0017EFCA /* Lore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABAE1BD2634F8DE0017EFCA /* Lore.swift */; };
 		CAE940682661EDA300F3EF72 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE940662661EDA300F3EF72 /* MapView.swift */; };
-		CAE940692661EDA300F3EF72 /* UnlockedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE940672661EDA300F3EF72 /* UnlockedView.swift */; };
+		CAE940692661EDA300F3EF72 /* NavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE940672661EDA300F3EF72 /* NavView.swift */; };
 		CAE9406B2661EECA00F3EF72 /* MKPointAnnotation-Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE9406A2661EECA00F3EF72 /* MKPointAnnotation-Codable.swift */; };
 /* End PBXBuildFile section */
 
@@ -28,7 +28,7 @@
 		CABAE1BA2634F7640017EFCA /* LoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoreView.swift; sourceTree = "<group>"; };
 		CABAE1BD2634F8DE0017EFCA /* Lore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lore.swift; sourceTree = "<group>"; };
 		CAE940662661EDA300F3EF72 /* MapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
-		CAE940672661EDA300F3EF72 /* UnlockedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnlockedView.swift; sourceTree = "<group>"; };
+		CAE940672661EDA300F3EF72 /* NavView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavView.swift; sourceTree = "<group>"; };
 		CAE9406A2661EECA00F3EF72 /* MKPointAnnotation-Codable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MKPointAnnotation-Codable.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -67,7 +67,7 @@
 				CABAE1BD2634F8DE0017EFCA /* Lore.swift */,
 				CABAE1BA2634F7640017EFCA /* LoreView.swift */,
 				CAE940662661EDA300F3EF72 /* MapView.swift */,
-				CAE940672661EDA300F3EF72 /* UnlockedView.swift */,
+				CAE940672661EDA300F3EF72 /* NavView.swift */,
 				CAE9406A2661EECA00F3EF72 /* MKPointAnnotation-Codable.swift */,
 				CABAE1AE2634EED60017EFCA /* Assets.xcassets */,
 				CABAE1B32634EED60017EFCA /* Info.plist */,
@@ -159,7 +159,7 @@
 				CAE940682661EDA300F3EF72 /* MapView.swift in Sources */,
 				CABAE1AB2634EED50017EFCA /* YourLoreApp.swift in Sources */,
 				CABAE1BE2634F8DE0017EFCA /* Lore.swift in Sources */,
-				CAE940692661EDA300F3EF72 /* UnlockedView.swift in Sources */,
+				CAE940692661EDA300F3EF72 /* NavView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -13,23 +13,22 @@ struct ContentView: View {
     @State private var centerCoordinate = CLLocationCoordinate2D()
     @State private var selectedPlace: MKPointAnnotation?
     @State private var showingPlaceDetails = false
+    @State private var showingEditScreen = false
     @State private var annotations = [CodableMKPointAnnotation]()
     
     var body: some View {
         NavigationView {
             Form {
+                NavigationLink("Map", destination: NavView(centerCoordinate: $centerCoordinate, locations: $annotations, selectedPlace: $selectedPlace, showingPlaceDetails: $showingPlaceDetails, showingEditScreen: $showingEditScreen))
                 List(results, id: \.id) { lore in
                     NavigationLink(destination: LoreView(lore: lore)) {
                         VStack(alignment: .leading) {
                             Text(lore.title)
                                 .font(.headline)
-//                            Text(lore.story)
-//                                .font(.body)
                         }
                     }
                 }
                 .navigationBarTitle("Your Lore")
-                NavigationLink("Map", destination: MapView(centerCoordinate: $centerCoordinate, selectedPlace: $selectedPlace, showingPlaceDetails: $showingPlaceDetails, annotations: annotations))
             }
             .onAppear(perform: loadData)
         }
