@@ -16,6 +16,7 @@ struct EditView: View {
     @Environment(\.presentationMode) var presentationMode
     @ObservedObject var placemark: MKPointAnnotation
     @State private var loadingState = LoadingState.loading
+    @Binding var locations: [CodableMKPointAnnotation]
     
     var body: some View {
         NavigationView {
@@ -24,16 +25,16 @@ struct EditView: View {
                     TextField("Place name", text: $placemark.wrappedTitle)
                     TextField("Description", text: $placemark.wrappedSubtitle)
                 }
+                Button("Delete pin") {
+                    let removeIndex = locations.firstIndex(where: { $0.title! == placemark.wrappedTitle})
+                    locations.remove(at: removeIndex!)
+                    self.presentationMode.wrappedValue.dismiss()
+                }
+                .accentColor(.red)
             }
             .navigationBarItems(trailing: Button("Done") {
                                     self.presentationMode.wrappedValue.dismiss()
             })
         }
-    }
-}
-
-struct EditView_Previews: PreviewProvider {
-    static var previews: some View {
-        EditView(placemark: MKPointAnnotation.example)
     }
 }

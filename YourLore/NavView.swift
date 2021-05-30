@@ -61,7 +61,6 @@ struct NavView: View {
                             selectedPlace = newLocation
                             showingEditScreen = true
                         }
-//                        self.showsUserLocation = true
                     }) {
                         Image(systemName: "location")
                             .padding()
@@ -82,7 +81,7 @@ struct NavView: View {
             .onAppear(perform: loadMapData)
             .sheet(isPresented: $showingEditScreen, onDismiss: saveData) {
                 if self.selectedPlace != nil {
-                    EditView(placemark: self.selectedPlace!)
+                    EditView(placemark: self.selectedPlace!, locations: $locations)
                 }
             }
         }
