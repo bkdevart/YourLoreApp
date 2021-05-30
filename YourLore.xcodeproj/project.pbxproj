@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA31C8AE2664108600282BD6 /* LocationFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA31C8AD2664108600282BD6 /* LocationFetcher.swift */; };
 		CABAE1AB2634EED50017EFCA /* YourLoreApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABAE1AA2634EED50017EFCA /* YourLoreApp.swift */; };
 		CABAE1AD2634EED50017EFCA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABAE1AC2634EED50017EFCA /* ContentView.swift */; };
 		CABAE1AF2634EED60017EFCA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CABAE1AE2634EED60017EFCA /* Assets.xcassets */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CA31C8AD2664108600282BD6 /* LocationFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationFetcher.swift; sourceTree = "<group>"; };
 		CABAE1A72634EED50017EFCA /* YourLore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YourLore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CABAE1AA2634EED50017EFCA /* YourLoreApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourLoreApp.swift; sourceTree = "<group>"; };
 		CABAE1AC2634EED50017EFCA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 			children = (
 				CABAE1AA2634EED50017EFCA /* YourLoreApp.swift */,
 				CABAE1AC2634EED50017EFCA /* ContentView.swift */,
+				CA31C8AD2664108600282BD6 /* LocationFetcher.swift */,
 				CABAE1BD2634F8DE0017EFCA /* Lore.swift */,
 				CABAE1BA2634F7640017EFCA /* LoreView.swift */,
 				CAE940662661EDA300F3EF72 /* MapView.swift */,
@@ -166,6 +169,7 @@
 				CABAE1AD2634EED50017EFCA /* ContentView.swift in Sources */,
 				CABAE1BB2634F7640017EFCA /* LoreView.swift in Sources */,
 				CADE17E1266335200063B83A /* MKPointAnnotation-ObservableObject.swift in Sources */,
+				CA31C8AE2664108600282BD6 /* LocationFetcher.swift in Sources */,
 				CAE940682661EDA300F3EF72 /* MapView.swift in Sources */,
 				CABAE1AB2634EED50017EFCA /* YourLoreApp.swift in Sources */,
 				CADE17DF266332890063B83A /* EditView.swift in Sources */,

@@ -15,6 +15,8 @@ struct NavView: View {
     @Binding var showingPlaceDetails: Bool
     @Binding var showingEditScreen: Bool
     
+    let locationFetcher = LocationFetcher()
+    
     var body: some View {
         ZStack {
             MapView(centerCoordinate: $centerCoordinate, selectedPlace: $selectedPlace, showingPlaceDetails: $showingPlaceDetails, annotations: locations)
@@ -33,12 +35,35 @@ struct NavView: View {
                         newLocation.title = "Example Location"
                         newLocation.subtitle = "Unknown value"
                         newLocation.coordinate = self.centerCoordinate
-                        self.locations.append(newLocation)
+                        locations.append(newLocation)
                         
-                        self.selectedPlace = newLocation
-                        self.showingEditScreen = true
+                        selectedPlace = newLocation
+                        showingEditScreen = true
                     }) {
                         Image(systemName: "plus")
+                            .padding()
+                            .background(Color.black.opacity(0.75))
+                            .foregroundColor(.white)
+                            .font(.title)
+                            .clipShape(Circle())
+                            .padding(.trailing)
+                    }
+                    Button(action : {
+                        // TODO make this move to user's current location
+                        self.locationFetcher.start()
+                        if let location = self.locationFetcher.lastKnownLocation {
+                            let newLocation = CodableMKPointAnnotation()
+                            newLocation.title = "Example Location"
+                            newLocation.subtitle = "Unknown value"
+                            newLocation.coordinate = location
+                            locations.append(newLocation)
+                            
+                            selectedPlace = newLocation
+                            showingEditScreen = true
+                        }
+//                        self.showsUserLocation = true
+                    }) {
+                        Image(systemName: "location")
                             .padding()
                             .background(Color.black.opacity(0.75))
                             .foregroundColor(.white)
