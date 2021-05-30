@@ -14,6 +14,8 @@
 		CABAE1BB2634F7640017EFCA /* LoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABAE1BA2634F7640017EFCA /* LoreView.swift */; };
 		CABAE1BE2634F8DE0017EFCA /* Lore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABAE1BD2634F8DE0017EFCA /* Lore.swift */; };
 		CADE17DD2662FF070063B83A /* YourLore.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CADE17DB2662FF070063B83A /* YourLore.xcdatamodeld */; };
+		CADE17DF266332890063B83A /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADE17DE266332890063B83A /* EditView.swift */; };
+		CADE17E1266335200063B83A /* MKPointAnnotation-ObservableObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADE17E0266335200063B83A /* MKPointAnnotation-ObservableObject.swift */; };
 		CAE940682661EDA300F3EF72 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE940662661EDA300F3EF72 /* MapView.swift */; };
 		CAE940692661EDA300F3EF72 /* NavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE940672661EDA300F3EF72 /* NavView.swift */; };
 		CAE9406B2661EECA00F3EF72 /* MKPointAnnotation-Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE9406A2661EECA00F3EF72 /* MKPointAnnotation-Codable.swift */; };
@@ -29,6 +31,8 @@
 		CABAE1BA2634F7640017EFCA /* LoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoreView.swift; sourceTree = "<group>"; };
 		CABAE1BD2634F8DE0017EFCA /* Lore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lore.swift; sourceTree = "<group>"; };
 		CADE17DC2662FF070063B83A /* YourLore.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = YourLore.xcdatamodel; sourceTree = "<group>"; };
+		CADE17DE266332890063B83A /* EditView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
+		CADE17E0266335200063B83A /* MKPointAnnotation-ObservableObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MKPointAnnotation-ObservableObject.swift"; sourceTree = "<group>"; };
 		CAE940662661EDA300F3EF72 /* MapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		CAE940672661EDA300F3EF72 /* NavView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavView.swift; sourceTree = "<group>"; };
 		CAE9406A2661EECA00F3EF72 /* MKPointAnnotation-Codable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MKPointAnnotation-Codable.swift"; sourceTree = "<group>"; };
@@ -70,6 +74,8 @@
 				CABAE1BA2634F7640017EFCA /* LoreView.swift */,
 				CAE940662661EDA300F3EF72 /* MapView.swift */,
 				CAE940672661EDA300F3EF72 /* NavView.swift */,
+				CADE17DE266332890063B83A /* EditView.swift */,
+				CADE17E0266335200063B83A /* MKPointAnnotation-ObservableObject.swift */,
 				CAE9406A2661EECA00F3EF72 /* MKPointAnnotation-Codable.swift */,
 				CABAE1AE2634EED60017EFCA /* Assets.xcassets */,
 				CABAE1B32634EED60017EFCA /* Info.plist */,
@@ -159,8 +165,10 @@
 				CAE9406B2661EECA00F3EF72 /* MKPointAnnotation-Codable.swift in Sources */,
 				CABAE1AD2634EED50017EFCA /* ContentView.swift in Sources */,
 				CABAE1BB2634F7640017EFCA /* LoreView.swift in Sources */,
+				CADE17E1266335200063B83A /* MKPointAnnotation-ObservableObject.swift in Sources */,
 				CAE940682661EDA300F3EF72 /* MapView.swift in Sources */,
 				CABAE1AB2634EED50017EFCA /* YourLoreApp.swift in Sources */,
+				CADE17DF266332890063B83A /* EditView.swift in Sources */,
 				CABAE1BE2634F8DE0017EFCA /* Lore.swift in Sources */,
 				CADE17DD2662FF070063B83A /* YourLore.xcdatamodeld in Sources */,
 				CAE940692661EDA300F3EF72 /* NavView.swift in Sources */,

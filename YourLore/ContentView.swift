@@ -14,12 +14,12 @@ struct ContentView: View {
     @State private var selectedPlace: MKPointAnnotation?
     @State private var showingPlaceDetails = false
     @State private var showingEditScreen = false
-    @State private var annotations = [CodableMKPointAnnotation]()
+    @State private var locations = [CodableMKPointAnnotation]()
     
     var body: some View {
         NavigationView {
             Form {
-                NavigationLink("Map", destination: NavView(centerCoordinate: $centerCoordinate, locations: $annotations, selectedPlace: $selectedPlace, showingPlaceDetails: $showingPlaceDetails, showingEditScreen: $showingEditScreen))
+                NavigationLink("Map", destination: NavView(centerCoordinate: $centerCoordinate, locations: $locations, selectedPlace: $selectedPlace, showingPlaceDetails: $showingPlaceDetails, showingEditScreen: $showingEditScreen))
                 List(results, id: \.id) { lore in
                     NavigationLink(destination: LoreView(lore: lore)) {
                         VStack(alignment: .leading) {
