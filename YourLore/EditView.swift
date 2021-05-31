@@ -25,6 +25,8 @@ struct EditView: View {
                     TextField("Place name", text: $placemark.wrappedTitle)
                     TextField("Description", text: $placemark.wrappedSubtitle)
                 }
+                Text("Latitude: \(String(placemark.coordinate.latitude))")
+                Text("Longitude: \(String(placemark.coordinate.longitude))")
                 Button("Delete pin") {
                     let removeIndex = locations.firstIndex(where: { $0.title! == placemark.wrappedTitle})
                     locations.remove(at: removeIndex!)
