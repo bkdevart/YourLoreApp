@@ -21,9 +21,9 @@ struct NavView: View {
         ZStack {
             MapView(centerCoordinate: $centerCoordinate, selectedPlace: $selectedPlace, showingPlaceDetails: $showingPlaceDetails, annotations: locations)
                 .edgesIgnoringSafeArea(.all)
-            Circle()
-                .fill(Color.blue)
-                .opacity(0.3)
+            Image("slime")
+//                .fill(Color.blue)
+//                .opacity(0.3)
                 .frame(width: 32, height: 32)
             
             VStack {
